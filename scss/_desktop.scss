@@ -1,0 +1,63 @@
+@media only screen and (min-width: 1007px) {
+/*-----BODY -----*/
+	body {
+		background-image: #DE353E;
+		background-repeat: repeat-x;
+	}
+
+/*-----WRAPPER -----*/
+	#wrapper {}
+
+/*-----CONTAINER -----*/
+	#container {
+		margin: 2em auto;
+		border: 1px solid #888;
+		
+	}
+
+/*-----HEADER -----*/
+
+
+
+/*-----NAVigation -----*/
+
+div.search input {
+	float: right;
+	border-radius: 5px;
+	border: solid 2px rgba(0,0,0,0.5);
+	padding: .5em;
+	margin: 2em 3em;
+	background-color: rgba(255,255,255,0.4);
+}
+
+
+/*-----CONTENT -----*/
+#content div.row article {
+	width: 25%;
+	float: left;
+	overflow: auto;
+}
+
+/*-----Images-----*/
+figure.w100 {
+	width: 100%;
+	float: left;
+	
+}
+figure.w33 {
+	width: 29%;
+	float: left;
+	
+}
+
+/*----- Registration form-----*/
+form {
+	width: 40%;
+	padding: 30px;
+	margin: 5px auto;
+}
+
+/*----- FOOTER -----*/
+
+
+} 

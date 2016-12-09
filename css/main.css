@@ -1,0 +1,482 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {
+  -webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*-----BODY -----*/
+body {
+  font-size: 16px;
+  font-family: verdana, sans-serif;
+  background-color: #DE353E; }
+
+/*-----CONTAINER -----*/
+#container {
+  background-color: #fff;
+  /*becomes the nav background color*/
+  min-width: 320px;
+  max-width: 1006px; }
+
+/*-----HEADER -----*/
+header {
+  background-color: #E2C48C;
+  border: solid #000000 2px; }
+  header img {
+    float: left;
+    width: 100%; }
+  header h1 {
+    font-size: 40px;
+    float: left;
+    color: #000000; }
+  header h2 {
+    font-size: 25px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #000000; }
+
+/*end of header nesting*/
+div.search input {
+  float: right;
+  border-radius: 5px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  padding: .5em;
+  margin: 1em 1em;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+/*----registration page----*/
+body {
+  padding: 0px;
+  margin: 0px; }
+
+form {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid blue;
+  margin: 5px auto; }
+
+.textInput {
+  margin-top: 2px;
+  height: 28px;
+  border: 1px solid yellow;
+  font-size: 16px;
+  padding: 1px;
+  width: 100%; }
+
+#error_msg {
+  width: 50%;
+  margin: 5px auto;
+  height: 30px;
+  border: 1px solid orange;
+  background: purple;
+  color: green;
+  text-align: center;
+  padding-top: 10px; }
+
+td {
+  text-align: right; }
+
+/*----login info----*/
+/* Bordered form */
+/*form {
+    border: 3px solid white;
+}
+
+/* Full-width inputs */
+/*input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: blue;
+  float: right;
+  color: white;
+  padding: 12px 18px;
+  margin: 10px 10px 7px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 12px; }
+
+/* Extra style for the cancel button (red) */
+/*.cancelbtn {
+    width: auto;
+    padding: 10px 25px;
+	margin: 10px 10px 10px 15px;
+    background-color: grey;
+}
+
+/* Center the avatar image inside this container */
+/*.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+/*img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+/*.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+/*span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+/*@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/*end of login info*/
+h1.paragraph {
+  padding-top: 1em; }
+
+/*-----NAVigation -----*/
+nav {
+  border: solid #000000 2px; }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: .9em;
+    background-color: #E2C48C;
+    color: #181327;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 8px;
+    font-size: 15px; }
+  nav li.active a {
+    background-color: rgba(176, 176, 176, 0.7); }
+  nav a:hover {
+    background-color: #DE353E;
+    color: #fafae1; }
+
+/*end of Nav nesting*/
+/*-----CONTENT -----*/
+#content {
+  min-height: 5em;
+  background-color: white; }
+
+#content h1 {
+  margin: 4px 2% 0 0;
+  font-size: 25px;
+  color: black; }
+
+#content p {
+  padding-top: 15px;
+  padding-bottom: 8px; }
+
+#content article {
+  margin: 0 2%; }
+
+#content article.news, #content article.tweet {
+  background-color: #f6f9cb;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
+/*-----content for photos-----*/
+#content h1 {
+  font-size: 2.3em;
+  padding-top: .5em;
+  padding-bottom: .5em; }
+
+#content h2 {
+  font-size: 1.5em;
+  margin: 0 2%;
+  color: #000000;
+  font-weight: 700; }
+
+#content h3 {
+  margin: .3em 0 .5em 0;
+  font-size: 1.5em; }
+
+#content p {
+  padding-top: .6em; }
+
+article {
+  margin: .9em 2%;
+  border-top: 1px solid #06518a;
+  font-size: 1.2em; }
+
+article figure {
+  overflow: hidden;
+  width: 100%; }
+
+article figure img {
+  margin-right: 4%;
+  float: left;
+  border: 1px solid black; }
+
+article figure figcaption {
+  display: inline;
+  width: 50%;
+  font-size: .7em;
+  color: #06518a; }
+
+/*-----images-----*/
+figure.w100 {
+  width: 100%;
+  padding: 10px; }
+
+figure.w33 {
+  width: 96%;
+  border: 1px solid black;
+  margin: 2px 2% 2px 0; }
+
+#index figure.shop img {
+  width: 100%; }
+
+#contact figure img {
+  width: 90%; }
+
+#index figure img {
+  width: 100%; }
+
+#sale figure img {
+  width: 50%; }
+
+#aboutus figure.shop img {
+  width: 50%;
+  border: 2px solid black;
+  margin: 10px 2% 15px 0; }
+
+#contact p {
+  width: 50%;
+  float: left; }
+
+#content figcaption {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  padding: 6px;
+  margin-bottom: 2px; }
+
+/*-----beginning of the form-------*/
+/*----- FOOTER -----*/
+footer {
+  clear: both;
+  text-align: center;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  font-size: 8px; }
+
+/*----- Other -----*/
+.keepopen {
+  clear: both; }
+
+@media only screen and (min-width: 600px) and (min-width: 600px) {
+  /*-----BODY -----*/
+  /*-----CONTAINER -----*/
+  /*-----HEADER -----*/
+  header h1 {
+    padding-top: 1.1em; }
+
+  /*-----NAVigation -----*/
+  nav {
+    background-color: #E2C48C;
+    /*-----fills remaining nav-----*/ }
+
+  nav ul li a {
+    float: left;
+    border: none;
+    border-radius: 0px;
+    margin: 0; }
+
+  /*-----CONTENT -----*/
+  div.search input {
+    float: right;
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    padding: .5em;
+    margin: 1em 2em;
+    background-color: rgba(255, 255, 255, 0.5); }
+
+  #content div h1 {
+    padding: .5em; }
+
+  #content div.row article {
+    width: 29%;
+    float: left;
+    overflow: auto; }
+
+  /*-----Images-----*/
+  figure.w33 {
+    width: 29%;
+    float: left; }
+
+  /*----login info----*/
+  /* Bordered form */
+  form {
+    border: 3px solid white; }
+
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: #DE353E;
+    float: center;
+    color: white;
+    -moz-text-decoration-color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    margin: 10px 10px 7px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 12px; }
+
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 25px;
+    margin: 10px 10px 10px 15px;
+    background-color: black; }
+
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0; }
+
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%; }
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    text-align: center; }
+
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px; }
+
+  /* Change styles for span and cancel button on extra small screens */ }
+@media only screen and (min-width: 600px) and (min-width: 600px) and (max-width: 600px) {
+  span.psw {
+    display: block;
+    float: none; }
+
+  .cancelbtn {
+    width: 100%; } }
+@media only screen and (min-width: 600px) and (min-width: 600px) {
+  /*----- FOOTER -----*/ }
+/*end of the tablet*/
+@media only screen and (min-width: 1007px) and (min-width: 1007px) {
+  /*-----BODY -----*/
+  body {
+    background-image: #DE353E;
+    background-repeat: repeat-x; }
+
+  /*-----WRAPPER -----*/
+  /*-----CONTAINER -----*/
+  #container {
+    margin: 2em auto;
+    border: 1px solid #888; }
+
+  /*-----HEADER -----*/
+  /*-----NAVigation -----*/
+  div.search input {
+    float: right;
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    padding: .5em;
+    margin: 2em 3em;
+    background-color: rgba(255, 255, 255, 0.4); }
+
+  /*-----CONTENT -----*/
+  #content div.row article {
+    width: 25%;
+    float: left;
+    overflow: auto; }
+
+  /*-----Images-----*/
+  figure.w100 {
+    width: 100%;
+    float: left; }
+
+  figure.w33 {
+    width: 29%;
+    float: left; }
+
+  /*----- Registration form-----*/
+  form {
+    width: 40%;
+    padding: 30px;
+    margin: 5px auto; }
+
+  /*----- FOOTER -----*/ }
+/*end of the desktop*/
